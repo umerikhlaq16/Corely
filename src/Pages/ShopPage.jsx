@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FiShoppingBag, FiSearch, FiX, FiPlus, FiMinus, FiTrash2, FiArrowRight } from 'react-icons/fi';
 
 const ShopPage = () => {
-  // --- STATES ---
+  // STATES 
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -20,7 +20,7 @@ const ShopPage = () => {
     { id: 5, name: "Abstract Set", price: 12, category: "Stickers", image: "https://images.unsplash.com/photo-1598301257982-0cf014dabbcd?w=500", tag: "" },
   ];
 
-  // --- LOGIC ---
+  // LOGIC 
   const addToCart = (product) => {
     setCart(prev => {
       const exists = prev.find(item => item.id === product.id);
@@ -51,7 +51,7 @@ const ShopPage = () => {
   return (
     <div className="min-h-screen bg-[#FDFDFD] text-[#121212] font-sans selection:bg-[#FF4D00] selection:text-white">
       
-      {/* --- CART SIDEBAR --- */}
+      {/* CART SIDEBAR */}
       <AnimatePresence>
         {isCartOpen && (
           <>
@@ -94,7 +94,7 @@ const ShopPage = () => {
         )}
       </AnimatePresence>
 
-      {/* --- SEARCH OVERLAY --- */}
+      {/*  SEARCH OVERLAY- */}
       <AnimatePresence>
         {isSearchOpen && (
           <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="fixed inset-0 bg-white z-[150] p-10 md:p-20">
@@ -109,7 +109,7 @@ const ShopPage = () => {
         )}
       </AnimatePresence>
 
-      {/* --- HEADER --- */}
+      {/*  HEADER  */}
       <header className="px-8 md:px-20 pt-24 pb-12 border-b border-gray-100">
         <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-end gap-8">
           <div className="space-y-4">
@@ -126,7 +126,7 @@ const ShopPage = () => {
         </div>
       </header>
 
-      {/* --- CATEGORY BAR --- */}
+      {/* CATEGORY BAR  */}
       <nav className="sticky top-0 z-40 bg-[#FDFDFD]/80 backdrop-blur-md px-8 md:px-20 py-6 border-b border-gray-100">
         <div className="max-w-[1400px] mx-auto flex gap-8 overflow-x-auto no-scrollbar">
           {categories.map((cat) => (
@@ -138,7 +138,7 @@ const ShopPage = () => {
         </div>
       </nav>
 
-      {/* --- PRODUCT GRID --- */}
+      {/* PRODUCT GRID  */}
       <main className="px-8 md:px-20 py-16">
         <div className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
           <AnimatePresence mode='popLayout'>
