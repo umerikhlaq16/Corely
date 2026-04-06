@@ -24,7 +24,7 @@ const TalkPage = () => {
     "UI/UX Design", "Backend Architecture", "Custom Software"
   ];
 
-  // Social Links Configuration
+  // Social Links 
   const socialLinks = [
     { name: 'Github', icon: <FiGithub size={20}/>, url: 'https://github.com/umerikhlaq16' },
     { name: 'LinkedIn', icon: <FiLinkedin size={20}/>, url: 'https://www.linkedin.com/in/umer-ikhlaq-25b376345/' },
@@ -32,7 +32,7 @@ const TalkPage = () => {
     { name: 'Behance', icon: <FaBehance size={20}/>, url: 'https://www.behance.net/umerikhlaq' }
   ];
 
-  // --- ANIMATION VARIANTS ---
+  //  ANIMATION VARIANTS 
   const containerVars = {
     hidden: { opacity: 0 },
     visible: {
@@ -70,7 +70,7 @@ const TalkPage = () => {
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
           
-          {/* --- LEFT COLUMN: CONTENT & INFO --- */}
+          {/* CONTENT & INFO */}
           <div className="lg:col-span-5 space-y-12">
             <div className="space-y-6">
               <motion.div variants={itemVars} className="flex items-center gap-2">
@@ -106,7 +106,7 @@ const TalkPage = () => {
             </motion.div>
           </div>
 
-          {/* --- RIGHT COLUMN: INTERACTIVE FORM --- */}
+          {/* INTERACTIVE FORM  */}
           <motion.div variants={itemVars} className="lg:col-span-7">
             <form className="bg-white border border-gray-100 rounded-[3rem] p-10 md:p-16 shadow-[0_40px_100px_rgba(0,0,0,0.02)] space-y-12">
               
@@ -163,7 +163,7 @@ const TalkPage = () => {
         </div>
       </motion.main>
 
-      {/* --- FOOTER SECTION --- */}
+      {/*  FOOTER  */}
       <motion.footer 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
