@@ -23,7 +23,7 @@ const AgencyPortfolio = () => {
   return (
     <div className="bg-white text-[#121212] selection:bg-[#FF4D00] selection:text-white antialiased">
       
-      {/* --- HERO SECTION --- */}
+      {/*  HERO SECTION  */}
       <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24">
         <div className="max-w-[1600px] w-full">
           <motion.div
@@ -56,7 +56,7 @@ const AgencyPortfolio = () => {
         </div>
       </section>
 
-      {/* --- STATS GRID --- */}
+      {/* STATS GRID  */}
       <section className="py-24 px-6 md:px-12 lg:px-24 border-y border-neutral-100">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16">
           {[
@@ -73,7 +73,7 @@ const AgencyPortfolio = () => {
         </div>
       </section>
 
-      {/* --- HORIZONTAL PORTFOLIO (FIXED SPACE) --- */}
+      {/*  HORIZONTAL SCROLL */}
       <section ref={scrollRef} className="relative h-[250vh] bg-[#121212]">
         <div className="sticky top-0 h-screen flex flex-col justify-center overflow-hidden">
           <div className="px-6 md:px-12 lg:px-24 mb-12 flex justify-between items-end">
@@ -107,7 +107,7 @@ const AgencyPortfolio = () => {
         </div>
       </section>
 
-      {/* --- SERVICES: CLEAN BENTO --- */}
+      {/*  SERVICES */}
       <section className="py-32 px-6 md:px-12 lg:px-24 bg-[#FAFAFA]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start mb-24">
@@ -138,7 +138,7 @@ const AgencyPortfolio = () => {
         </div>
       </section>
 
-      {/* --- CONTACT CTA --- */}
+      {/*  CONTACT CTA */}
       <section className="py-24 px-6">
         <div className="max-w-[1400px] mx-auto bg-[#121212] rounded-[3rem] p-12 md:p-32 text-center relative overflow-hidden">
           {/* Animated Background Shape */}
@@ -160,7 +160,7 @@ const AgencyPortfolio = () => {
         </div>
       </section>
 
-      {/* --- FOOTER --- */}
+      {/* FOOTER  */}
       <footer className="py-12 px-6 md:px-12 lg:px-24 bg-white border-t border-neutral-100">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-2xl font-black tracking-tighter">CORELY<span className="text-[#FF4D00]">.</span></div>
