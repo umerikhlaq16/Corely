@@ -26,14 +26,14 @@ const CreativeLanding = () => {
   return (
     <div ref={containerRef} className="relative min-h-screen bg-[#0a0a0a] text-white selection:bg-[#FF4D00] selection:text-white font-sans overflow-x-hidden">
       
-      {/* --- PREMIUM GRAIN OVERLAY --- */}
+      {/* PREMIUM GRAIN OVERLAY */}
       <div className="fixed inset-0 z-[99] pointer-events-none opacity-[0.03] contrast-150" 
            style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }}>
       </div>
 
-      {/* --- HERO SECTION --- */}
+      {/* HERO SECTION  */}
       <section className="relative h-screen flex flex-col justify-center items-center px-8 overflow-hidden">
-        {/* Background Scrolling Text (Decorative) */}
+        {/* Background Scrolling Text  */}
         <div className="absolute inset-0 flex flex-col justify-center pointer-events-none opacity-[0.02] select-none">
           <motion.h1 style={{ x: xLeft }} className="text-[25vw] font-black leading-none whitespace-nowrap">ENGINEERING ASSETS</motion.h1>
           <motion.h1 style={{ x: xRight }} className="text-[25vw] font-black leading-none whitespace-nowrap">DIGITAL FUTURE</motion.h1>
@@ -78,7 +78,7 @@ const CreativeLanding = () => {
         </div>
       </section>
 
-      {/* --- SERVICES: BENTO BOX --- */}
+      {/* SERVICES */}
       <section className="py-32 px-8 max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Main Feature */}
@@ -120,7 +120,7 @@ const CreativeLanding = () => {
         </div>
       </section>
 
-      {/* --- THE MARQUEE: SKEWED --- */}
+      {/*  SKEWED  */}
       <div className="py-10 bg-[#FF4D00] -rotate-1 scale-105 overflow-hidden flex whitespace-nowrap">
         <motion.div 
           animate={{ x: [0, -1000] }} 
@@ -136,7 +136,7 @@ const CreativeLanding = () => {
         </motion.div>
       </div>
 
-      {/* --- BIG CALL TO ACTION --- */}
+      {/*  CTA */}
       <section className="relative py-60 px-8 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#FF4D00]/5 to-transparent"></div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
@@ -158,7 +158,7 @@ const CreativeLanding = () => {
         </div>
       </section>
 
-      {/* --- FOOTER --- */}
+      {/* FOOTER */}
       <footer className="py-20 px-8 md:px-20 border-t border-white/5 bg-zinc-950">
         <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-start gap-20">
           <div className="max-w-xs">
