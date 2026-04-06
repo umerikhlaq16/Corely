@@ -35,10 +35,10 @@ const CardSection = ({ fadeInUp }) => {
 
   return (
     <section className="relative z-10 px-4 md:px-10 py-12">
-      {/* MAIN CONTAINER: No extra outer BG, just the clean white card */}
+      {/* MAIN CONTAINER */}
       <div className="bg-white rounded-[32px] md:rounded-[60px] shadow-[0_30px_80px_rgba(0,0,0,0.03)] px-6 md:px-16 py-16 md:py-24 overflow-hidden border border-black/[0.03]">
         
-        {/* --- HEADER SECTION --- */}
+        {/*  HEADER SECTION */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-20 md:mb-32">
           <motion.div {...fadeInUp} className="max-w-xl">
             <div className="flex items-center gap-3 mb-4">
@@ -60,7 +60,7 @@ const CardSection = ({ fadeInUp }) => {
           </motion.div>
         </div>
 
-        {/* --- SERVICES LIST --- */}
+        {/*  SERVICES LIST */}
         <div className="border-t border-black/[0.05]">
           {services.map((service, index) => {
             const IconComponent = service.icon;
@@ -73,7 +73,7 @@ const CardSection = ({ fadeInUp }) => {
                 onMouseLeave={() => setHoveredIndex(null)}
                 className="group relative flex flex-col md:flex-row items-start md:items-center justify-between py-10 md:py-12 border-b border-black/[0.05] cursor-pointer transition-all duration-500"
               >
-                {/* Background Highlight: Subtle & Clean */}
+                {/* Background */}
                 <AnimatePresence>
                   {isHovered && (
                     <motion.div 
@@ -103,14 +103,14 @@ const CardSection = ({ fadeInUp }) => {
                   </div>
                 </div>
 
-                {/* Middle: Description (Refined font size) */}
+                {/*  Description */}
                 <div className="hidden lg:block w-[28%] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <p className="text-gray-400 text-xs leading-relaxed">
                     {service.desc}
                   </p>
                 </div>
 
-                {/* Right Side: Simple Plus Icon */}
+                {/* Right Side */}
                 <div className="absolute right-0 md:static mt-4 md:mt-0">
                    <motion.div
                     animate={{ 
