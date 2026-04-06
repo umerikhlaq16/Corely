@@ -132,7 +132,7 @@ const HeroSlider = () => {
           </SwiperSlide>
         ))}
 
-        {/* Responsive Navigation & Progress UI */}
+        {/* Navigation & Progress UI */}
         <div className="absolute bottom-8 md:bottom-16 left-0 w-full z-20 flex justify-between items-center px-6 md:px-24 pointer-events-none">
           
           <button className="prev-btn pointer-events-auto flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 hover:bg-white/20 transition-all duration-500 group outline-none">
