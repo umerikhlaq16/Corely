@@ -5,10 +5,10 @@ import { ArrowUpRight, Mail } from 'lucide-react';
 const FooterCTA = () => {
   return (
     <div className="relative">
-      {/* FOOTER WRAPPER: Sticky effect intact */}
+      {/* FOOTER WRAPPER */}
       <footer className="sticky bottom-0 h-screen w-full bg-[#0f0f0f] flex flex-col justify-between p-8 md:p-20 -z-10 text-white overflow-hidden">
         
-        {/* --- MAIN HEADER SECTION --- */}
+        {/* MAIN HEADER SECTION */}
         <div className="mt-12 md:mt-20">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -49,7 +49,7 @@ const FooterCTA = () => {
           </motion.div>
         </div>
 
-        {/* --- BOTTOM SECTION: CLEANED UP --- */}
+        {/* BOTTOM SECTION */}
         <div className="w-full mb-12">
           <div className="flex flex-col items-center justify-center gap-4 border-t border-white/5 pt-12">
             <button 
