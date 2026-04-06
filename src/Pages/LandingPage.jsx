@@ -23,7 +23,7 @@ const PortfolioPage = () => {
   return (
     <div className="bg-[#F9F8F6] text-[#1a1a1a] selection:bg-orange-600 selection:text-white overflow-x-hidden font-sans">
       
-      {/* --- CLEAN HERO SECTION --- */}
+      {/*  HERO SECTION */}
       <motion.section 
         style={{ scale, rotateZ: rotate }}
         className="relative pt-32 pb-32 px-6 md:px-20 z-0 flex flex-col items-center text-center origin-bottom"
@@ -74,7 +74,7 @@ const PortfolioPage = () => {
         </div>
       </motion.section>
 
-      {/* --- CAPABILITIES GRID --- */}
+      {/* CAPABILITIES GRID  */}
       <section className="relative z-10 bg-white rounded-t-[4rem] md:rounded-t-[6rem] px-6 md:px-20 py-32 shadow-[0_-50px_100px_rgba(0,0,0,0.03)] border-t border-gray-100">
         <div className="max-w-[1400px] mx-auto">
           
@@ -160,7 +160,7 @@ const PortfolioPage = () => {
         </div>
       </section>
 
-      {/* --- GLOBAL SECTION --- */}
+      {/* GLOBAL SECTION */}
       <section className="bg-white px-6 md:px-20 py-24 border-y border-gray-100 flex flex-col md:flex-row justify-between items-center gap-10">
          <div className="flex items-center gap-4">
             <div className="w-10 h-10 bg-[#1a1a1a] rounded-full flex items-center justify-center text-white">
@@ -175,7 +175,7 @@ const PortfolioPage = () => {
          </div>
       </section>
 
-      {/* --- CTA SECTION --- */}
+      {/* CTA SECTION */}
       <section className="bg-white py-40 px-6">
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
@@ -210,7 +210,7 @@ const PortfolioPage = () => {
         </motion.div>
       </section>
 
-      {/* --- MINIMAL FOOTER --- */}
+      {/* FOOTER */}
       <footer className="bg-[#F9F8F6] pt-20 pb-10 px-8 md:px-20">
          <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center border-t border-gray-200 pt-12 gap-8">
             <div className=" gap-2 items-center md:items-start">
@@ -223,7 +223,7 @@ const PortfolioPage = () => {
   );
 };
 
-// --- HELPERS ---
+// HELPERS
 
 const BentoCard = ({ children, className }) => (
   <motion.div 
