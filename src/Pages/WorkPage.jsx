@@ -17,7 +17,7 @@ const WorkPage = () => {
       title: "Nexus AI Interface",
       category: "AI Agents",
       image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop",
-      size: "large" // Takes more space
+      size: "large" 
     },
     {
       id: 2,
@@ -56,7 +56,7 @@ const WorkPage = () => {
   return (
     <div className="min-h-screen bg-[#FDFDFD] text-[#121212] font-sans selection:bg-[#FF4D00] selection:text-white">
       
-      {/* --- HEADER --- */}
+      {/*  HEADER  */}
       <section className="px-8 md:px-20 pt-32 pb-16">
         <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-end gap-10">
           <motion.div 
@@ -92,7 +92,7 @@ const WorkPage = () => {
         </div>
       </section>
 
-      {/* --- MASONRY GRID --- */}
+      {/* MASONRY GRID */}
       <section className="px-8 md:px-20 pb-40">
         <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
           <AnimatePresence mode='popLayout'>
@@ -140,7 +140,7 @@ const WorkPage = () => {
         </div>
       </section>
 
-      {/* --- FOOTER CTA --- */}
+      {/* FOOTER CTA  */}
       <footer className="py-20 text-center border-t border-gray-100">
         <p className="text-gray-400 text-sm font-bold uppercase tracking-[0.2em] mb-6">Have a vision?</p>
         <a href="/talk" className="text-5xl md:text-7xl font-bold hover:text-[#FF4D00] transition-colors tracking-tighter">
