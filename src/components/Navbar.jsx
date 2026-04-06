@@ -3,9 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import { Home, Zap, Briefcase, ShoppingBag, MessageCircle, Sun, Moon, Search, X, Menu } from 'lucide-react';
 
-/* ══════════════════════════════════════════════════════
-    STATIC DATA
-══════════════════════════════════════════════════════ */
+/* STATIC DATA */
 const MENU_ITEMS = [
   { icon: <Home size={18} />,       label: 'Home',    path: '/' },
   { icon: <Zap size={18} />,        label: 'Stories', path: '/stories' },
@@ -14,9 +12,7 @@ const MENU_ITEMS = [
   { icon: <MessageCircle size={18}/>,label: 'Contact', path: '/talk' },
 ];
 
-/* ══════════════════════════════════════════════════════
-    REUSABLE COMPONENTS (Optimized: Moved outside to prevent re-renders)
-══════════════════════════════════════════════════════ */
+/* REUSABLE COMPONENTS (Optimized: Moved outside to prevent re-renders) */
 const Tooltip = ({ label, position }) => (
   <span className={`
     absolute opacity-0 group-hover:opacity-100 pointer-events-none z-50
@@ -99,9 +95,7 @@ const SearchOverlay = ({ isOpen, onClose, inputRef, isDarkMode, glassStyle }) =>
   </AnimatePresence>
 );
 
-/* ══════════════════════════════════════════════════════
-    MAIN NAVBAR COMPONENT
-══════════════════════════════════════════════════════ */
+/* MAIN NAVBAR COMPONENT */
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -194,9 +188,7 @@ const Navbar = () => {
     );
   };
 
-  /* ════════════════════════════════════════════════════
-      HOME PAGE → Simple Top Navbar
-  ════════════════════════════════════════════════════ */
+  /* HOME PAGE = Simple Top Navbar */
   if (isHomePage) {
     return (
       <>
@@ -364,9 +356,7 @@ const Navbar = () => {
     );
   }
 
-  /* ════════════════════════════════════════════════════
-      ALL OTHER PAGES → Dock / Side Nav
-  ════════════════════════════════════════════════════ */
+  /* ALL OTHER PAGES == Dock / Side Nav */
   return (
     <>
       {/* Logo */}
