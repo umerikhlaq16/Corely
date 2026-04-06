@@ -40,7 +40,7 @@ const StoriesPage = () => {
   return (
     <div className="min-h-screen bg-[#FDFDFD] text-[#121212] font-sans selection:bg-[#FF4D00] selection:text-white">
       
-      {/* --- HERO SECTION --- */}
+      {/* HERO SECTION */}
       <section className="px-8 md:px-20 pt-28 pb-20">
         <div className="max-w-[1400px] mx-auto">
           <motion.div 
@@ -63,7 +63,7 @@ const StoriesPage = () => {
         </div>
       </section>
 
-      {/* --- STORIES GRID --- */}
+      {/* STORIES GRID  */}
       <section className="px-8 md:px-20 pb-32">
         <div className="max-w-[1400px] mx-auto grid grid-cols-1 gap-32">
           {stories.map((story, index) => (
@@ -135,7 +135,7 @@ const StoriesPage = () => {
         </div>
       </section>
 
-      {/* --- CTA SECTION --- */}
+      {/* CTA */}
       <section className="px-8 md:px-20 py-32 bg-[#121212] text-white rounded-t-[4rem]">
         <div className="max-w-[1400px] mx-auto text-center space-y-10">
           <h2 className="text-5xl md:text-7xl font-bold tracking-tighter">READY TO START <br /> YOUR OWN STORY?</h2>
