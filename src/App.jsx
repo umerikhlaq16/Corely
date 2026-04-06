@@ -20,14 +20,13 @@ function App() {
   return (
     <Router>
       <div className="bg-black min-h-screen">
-        {/* Navbar yahan hamesha top par rahega */}
         <Navbar /> 
         
         <Routes>
-          {/* Main Home Page - Sirf yahan Slider dikhega */}
+
           <Route path="/" element={<HeroSlider />} />
           
-          {/* Other Pages - Inka apna alag content hoga */}
+          {/* Pages */}
           <Route path="/works" element={<Works />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/landing" element={<LandingPage />} />
